@@ -502,11 +502,37 @@ html.theme-light {
 			}
 		}
 	}
+
+	.container_c2739c,
+	.tabBody_c2739c,
+	.container_a4d4d9,
+	.chat_a7d72e,
+	.app_a01fb1,
+	.bg_d4b6c5 {
+		background-color: transparent;
+	}
+
+	.searchBar_f0963d,
+	.peopleColumn_c2739c,
+	.messagesWrapper_e2e187,
+	.panels_a4d4d9,
+	.container_ee69e0,
+	.themed_fc4f04,
+	.sidebarRegion_c25c6d,
+	.scrollerBase_c49869 {
+		background-color: var(--background-primary);
+	}
+
+	.appMount_ea7e65,
+	.standardSidebarView_c25c6d,
+	.sidebar_a4d4d9 { /* genuinely couldn't be bothered to go all the way back to change bg color */
+		background-color: var(--background-deep);
+	}
 }
 
 /* NOTE: SECTION: ------------------------------------------ theme */
 /* NOTE: SUBSECTION: ------------ global padding, borders */
-.content_a4d4d9 {
+.appAsidePanelWrapper_bd26cc {
 	padding: var(--pad);
 }
 
@@ -519,7 +545,9 @@ html.theme-light {
 .messagesWrapper_e2e187,
 .container_cbd271,
 .nowPlayingColumn_c2739c,
-.peopleColumn_c2739c {
+.peopleColumn_c2739c,
+.sidebarRegion_c25c6d, 
+.contentRegion_c25c6d {
 	margin: 0;
 	padding: 0;
 	will-change: border-color;
@@ -537,6 +565,7 @@ html.theme-light {
 .content_a7d72e,
 .tabBody_c2739c,
 .container_c2739c,
+.container_a4d4d9,
 .chat_a7d72e,
 .chatContent_a7d72e,
 .sidebar_a4d4d9 {
@@ -606,7 +635,7 @@ html.theme-light {
 }
 
 .typing_d7ebeb {
-	background: var(--background-primary);
+	background: var(--background-accent);
 	order: -1;
 	top: calc(0px - var(--pad)*2 - var(--border-width)*2);
 	height: var(--pad);
@@ -626,7 +655,6 @@ html.theme-light {
 }
 
 .container_b2ca13,
-.sidebar_a4d4d9,
 .panels_a4d4d9,
 .container_ee69e0,
 .scroller_c47fa9{
@@ -642,18 +670,37 @@ html.theme-light {
 	width: calc(100% - 2 * var(--txt-pad));
 }
 
-.sidebar_a4d4d9 {
+.sidebar_a4d4d9,
+.sidebar_c25c6d {
 	margin-right: var(--pad);
 	transition: width var(--trans-dur) ease-in-out;
 
 }
 
 .guilds_a4d4d9 {
-	margin: var(--pad);
-	margin-right: 0;
+	height: 100%;
 	transition: width var(--trans-dur) ease-in-out;
+	position: relative;
 }
 
-.content_a7d72e {
+.tree_fea3ef {
+	height: 100%;
+	background-color: var(--background-primary);
+}
+
+.sidebarRegion_c25c6d {
+	flex: 0 0 var(--sidebar-width);
+}
+
+.standardSidebarView_c25c6d {
 	gap: var(--pad);
+	background-color: var(--background-secondary);
+}
+
+.contentColumn_c25c6d {
+	max-width: 100%;
+}
+
+.contentRegion_c25c6d {
+	flex: 1 1 auto;
 }

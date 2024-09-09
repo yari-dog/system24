@@ -4,10 +4,19 @@
 * @author yari :3, (refact0r, Sophed)
 * @version 1.0.0
 */
-
 /* NOTE: SECTION: ------------------------------------------ general */
 /* NOTE: SUBSECTION: ------------ guilds & channels */
 /* NOTE: collapse */
+
+@container (width < 20px) {
+	&{
+		padding: 100px;
+	};
+	.tree_fea3ef {
+		--hack: 1 !important;
+	}
+}
+
 @media (max-width: 1280px) {
 
 	.sidebar_a4d4d9,
@@ -18,6 +27,7 @@
 		position: fixed;
 		z-index: 101;
 		min-height: calc(var(--element-height-min) - var(--pad));
+		height: auto;
 		max-height: calc(var(--element-height-min) - var(--pad)*2);
 		box-sizing: border-box;
 		overflow: hidden;
@@ -25,6 +35,7 @@
 		width: calc(var(--element-width) + var(--pad));
 		background-color: transparent;
 		transition: var(--transition);
+		container-type: size;
 
 		&:not(:is(:hover, :focus-within)) {
 			transition: var(--transition), max-height 0ms ease-in-out var(--trans-dur);
@@ -33,7 +44,6 @@
 
 		&:is(:hover, :focus-within) {
 			max-height: calc(var(--element-height) - var(--pad)*2);
-			background-color: var(--background-primary);
 		}
 	}
 
@@ -43,8 +53,10 @@
 	:root:has(#guild-context),
 	:root:not(:has(.privateChannels_f0963d)):has(#user-context) {
 		& .guilds_a4d4d9 {
-			width: calc(var(--element-width) + var(--pad));
-			max-height: calc(var(--element-height) - var(--pad)*2);
+				--test: var(--hack);
+				width: calc(var(--hack)px * (var(--element-width) + var(--pad)));
+				max-height: calc(var(--element-height) - var(--pad)*2);
+				transition: var(--transition);
 		}
 
 		& .chat_a7d72e::before,
@@ -58,6 +70,7 @@
 		& .sidebar_a4d4d9 {
 			width: calc(var(--element-width) + var(--pad));
 			max-height: calc(var(--element-height) - var(--pad)*2);
+			transition: var(--transition);
 		}
 
 		& .chat_a7d72e::after,
@@ -71,17 +84,20 @@
 		--element-width: calc(240px + 2*var(--border-width));
 		bottom: var(--pad);
 		left: 0;
+		margin-left: 0;
 	}
 
 	/* NOTE: guilds */
 	.guilds_a4d4d9 {
 		--element-width: calc(72px + 2*var(--border-width));
 		top: var(--pad);
+		left: 0;
+		margin-bottom: 0;
+		background-color: transparent;
 	}
 
 	/* NOTE: add bg to guilds list */
 	.tree_fea3ef {
-		position: absolute;
 		top: 0;
 		box-sizing: border-box;
 		background-color: var(--background-primary);
