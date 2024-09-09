@@ -46,6 +46,17 @@
 	--border-hover-color: var(--acc-0);
 	--border-transition: 0.2s ease;
 
+	--trans-dur: calc(1000ms/10);
+	/* how long each pixel should take to transition */
+
+	--border: var(--border-width) solid var(--border-color);
+	--border-hover: var(--border-width) solid var(--border-hover-color);
+
+	--element-height: 100%;
+	--element-height-min: 50%;
+	--sidebar-width: 240px;
+
+	--custom-channel-textarea-text-area-height: 56px;
 	--online-dot: var(--green);
 	--dnd-dot: var(--pink);
 	--idle-dot: var(--yellow);
