@@ -57,6 +57,7 @@
 	--sidebar-width: 240px;
 
 	--custom-channel-textarea-text-area-height: 56px;
+	--custom-channel-members-bg: var(--background-primary);
 	--online-dot: var(--green);
 	--dnd-dot: var(--pink);
 	--idle-dot: var(--yellow);
@@ -514,11 +515,16 @@ html.theme-light {
 .panels_a4d4d9,
 .privateChannels_f0963d,
 .container_ee69e0,
+.container_fc4f04,
 .messagesWrapper_e2e187,
-.subtitleContainer_a7d72e {
+.subtitleContainer_a7d72e,
+.membersWrap_cbd271,
+.nowPlayingColumn_c2739c,
+.peopleColumn_c2739c {
 	margin: 0;
 	padding: 0;
 	will-change: border-color;
+	box-sizing: border-box;
 	border: var(--border);
 	transition: border-color var(--border-transition);
 
@@ -527,9 +533,13 @@ html.theme-light {
 	}
 }
 
-.chatContent_a7d72e,
-.sidebar_a4d4d9 {
+.content_a7d72e,
+.tabBody_c2739c,
+.container_c2739c {
 	gap: var(--pad);
+}
+.scroller_bf550a {
+	border: none;
 }
 
 .subtitleContainer_a7d72e,
@@ -635,4 +645,8 @@ html.theme-light {
 	margin: var(--pad);
 	margin-right: 0;
 	transition: width var(--trans-dur) ease-in-out;
+}
+
+.content_a7d72e {
+	gap: var(--pad);
 }
