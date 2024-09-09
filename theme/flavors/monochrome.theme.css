@@ -121,5 +121,5 @@
 	--shade-1: oklch(70% 0 0);
 	--shade-2: oklch(50% 0 0);
 	--background-primary: var(--bg-0);
-	--background-tertiary: var(--bg-2);
+	--background-tertiary: var(--bg-0);
 }

@@ -118,7 +118,7 @@
 	--green-1: oklch(50% 0.13 160);
 	--green-2: oklch(43% 0.13 160);
 	--background-primary: var(--bg-0);
-	--background-tertiary: var(--bg-2);
+	--background-tertiary: var(--bg-0);
 }
 
 [class^=jumpToPresentBar_]>button {

@@ -120,6 +120,6 @@
 	--green-2: oklch(53% 0.12 160);
 
 	--background-primary: var(--bg-0);
-	--background-tertiary: var(--bg-2);
+	--background-tertiary: var(--bg-0);
 
 }

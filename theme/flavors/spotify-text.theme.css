@@ -118,5 +118,5 @@
 	--green-1: hsl(141, 73%, 42%);
 	--green-2: hsl(141, 73%, 36%);
 	--background-primary: var(--bg-0);
-	--background-tertiary: var(--bg-2);
+	--background-tertiary: var(--bg-0);
 }
