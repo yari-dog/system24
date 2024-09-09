@@ -1,16 +1,9 @@
 /**
-* @name yari's system24
+* @name yari's system24 gruvbox theme
 * @description a rework of the system24 theme, designed to be more efficient
 * @author yari :3, (refact0r, Sophed)
 * @version 1.0.0
 */
-
-@import url('https://raw.githubusercontent.com/yari-dog/system24/main/src/main.css');
-/* main theme css. DO NOT REMOVE */
-@import url('https://raw.githubusercontent.com/yari-dog/system24/main/src/unrounding.css');
-/* gets rid of all rounded corners. remove if you want rounded corners. */
-@import url('https://raw.githubusercontent.com/yari-dog/system24/main/src/autohide.css');
-/* hides sidebars etc until shit is hovered w/ ur mouse. has media rules built in. */
 
 /* customize things here */
 :root {
@@ -113,5 +106,6 @@
 	--blue: #7daea3;
 	--green: #a9b665;
 	--background-primary: var(--bg-0);
-	--background-tertiary: var(--bg-0);
+	--background-tertiary: var(--bg-2);
+	--background-deep: var(--bg-0);
 }

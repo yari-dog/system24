@@ -603,8 +603,7 @@ html.theme-light {
 	justify-content: center;
 }
 
-.panels_a4d4d9,
-.form_a7d72e {
+.panels_a4d4d9 {
 	height: var(--custom-channel-textarea-text-area-height);
 }
 

@@ -66,7 +66,9 @@
 .container_cebd1c,
 .banner_d5fdb1,
 .themedBackground_d0696b, 
-.channelTextArea_a7d72e {
+.channelTextArea_a7d72e,
+.replyBar_b11c5e,
+.attachedBars_d0696b {
 	border-radius: 0 !important;
 }
 

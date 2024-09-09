@@ -7,16 +7,6 @@
 /* NOTE: SECTION: ------------------------------------------ general */
 /* NOTE: SUBSECTION: ------------ guilds & channels */
 /* NOTE: collapse */
-
-@container (width < 20px) {
-	&{
-		padding: 100px;
-	};
-	.tree_fea3ef {
-		--hack: 1 !important;
-	}
-}
-
 @media (max-width: 1280px) {
 
 	.sidebar_a4d4d9,
@@ -35,7 +25,6 @@
 		width: calc(var(--element-width) + var(--pad));
 		background-color: transparent;
 		transition: var(--transition);
-		container-type: size;
 
 		&:not(:is(:hover, :focus-within)) {
 			transition: var(--transition), max-height 0ms ease-in-out var(--trans-dur);
