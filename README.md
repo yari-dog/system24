@@ -1,4 +1,4 @@
-![preivew](/assets/preview.png)
+![preview](/assets/preview.png)
 
 # system24
 

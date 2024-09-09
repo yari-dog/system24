@@ -616,8 +616,23 @@ html.theme-light {
 	background-color: var(--background-primary) !important;
 }
 
-.animatedContainer_fd6364 /* server banner */ {
+.animatedContainer_fd6364
+
+/* server banner */
+	{
 	top: var(--txt-pad);
 	left: var(--txt-pad);
 	width: calc(100% - 2 * var(--txt-pad));
+}
+
+.sidebar_a4d4d9 {
+	margin-right: var(--pad);
+	transition: width var(--trans-dur) ease-in-out;
+
+}
+
+.guilds_a4d4d9 {
+	margin: var(--pad);
+	margin-right: 0;
+	transition: width var(--trans-dur) ease-in-out;
 }

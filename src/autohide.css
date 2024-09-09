@@ -152,17 +152,3 @@
 	}
 
 }
-
-@media (min-width: 1280px) {
-	.sidebar_a4d4d9 {
-		margin-right: var(--pad);
-		transition: width var(--trans-dur) ease-in-out;
-
-	}
-
-	.guilds_a4d4d9 {
-		margin: var(--pad);
-		margin-right: 0;
-		transition: width var(--trans-dur) ease-in-out;
-	}
-}
