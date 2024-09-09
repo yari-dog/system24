@@ -1,6 +1,7 @@
 # yari's system24
 
 a tui-style discord theme, based on refact0r's system24.
+
 it's a lot faster. glhf. uncomment auto hide if u want idgaf
 
 ## install
