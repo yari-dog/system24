@@ -517,7 +517,6 @@ html.theme-light {
 .container_ee69e0,
 .container_fc4f04,
 .messagesWrapper_e2e187,
-.subtitleContainer_a7d72e,
 .membersWrap_cbd271,
 .nowPlayingColumn_c2739c,
 .peopleColumn_c2739c {
@@ -535,7 +534,8 @@ html.theme-light {
 
 .content_a7d72e,
 .tabBody_c2739c,
-.container_c2739c {
+.container_c2739c,
+.chat_a7d72e {
 	gap: var(--pad);
 }
 .scroller_bf550a {
@@ -614,15 +614,14 @@ html.theme-light {
 }
 
 .subtitleContainer_a7d72e {
-	height: --custom-channel-textarea-text-area-height;
-	margin-bottom: var(--pad);
+	height: var(--custom-channel-textarea-text-area-height);
 }
 
 .container_b2ca13,
 .sidebar_a4d4d9,
 .panels_a4d4d9,
 .container_ee69e0,
-.scroller_c47fa9 {
+.scroller_c47fa9{
 	background-color: var(--background-primary) !important;
 }
 
