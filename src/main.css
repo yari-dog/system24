@@ -517,14 +517,16 @@ html.theme-light {
 .container_ee69e0,
 .container_fc4f04,
 .messagesWrapper_e2e187,
-.membersWrap_cbd271,
+.container_cbd271,
 .nowPlayingColumn_c2739c,
 .peopleColumn_c2739c {
 	margin: 0;
 	padding: 0;
 	will-change: border-color;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	border: var(--border);
+	width: auto;
+	height: auto;
 	transition: border-color var(--border-transition);
 
 	&:hover {
@@ -535,7 +537,9 @@ html.theme-light {
 .content_a7d72e,
 .tabBody_c2739c,
 .container_c2739c,
-.chat_a7d72e {
+.chat_a7d72e,
+.chatContent_a7d72e,
+.sidebar_a4d4d9 {
 	gap: var(--pad);
 }
 .scroller_bf550a {
@@ -570,7 +574,8 @@ html.theme-light {
 	justify-content: center;
 }
 
-.panels_a4d4d9 {
+.panels_a4d4d9,
+.form_a7d72e {
 	height: var(--custom-channel-textarea-text-area-height);
 }
 
@@ -614,7 +619,10 @@ html.theme-light {
 }
 
 .subtitleContainer_a7d72e {
-	height: var(--custom-channel-textarea-text-area-height);
+	min-height: var(--custom-channel-textarea-text-area-height);
+	&>section {
+		height: 100%;
+	}
 }
 
 .container_b2ca13,
