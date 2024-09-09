@@ -615,3 +615,9 @@ html.theme-light {
 .scroller_c47fa9 {
 	background-color: var(--background-primary) !important;
 }
+
+.animatedContainer_fd6364 /* server banner */ {
+	top: var(--txt-pad);
+	left: var(--txt-pad);
+	width: calc(100% - 2 * var(--txt-pad));
+}
