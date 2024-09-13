@@ -156,4 +156,7 @@
 		}
 	}
 
+	#vc-spotify-player {
+		overflow: hidden;
+	}
 }
