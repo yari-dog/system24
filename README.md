@@ -1,3 +1,6 @@
+# ! warning !
+this is broken at the moment. discord updated their UI and i haven't gone through and updated it yet. i'll get around to it soon, but for now it's a little broken. sorry :/
+
 # yari's system24
 
 a tui-style discord theme, based on refact0r's system24.
